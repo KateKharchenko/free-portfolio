@@ -33,12 +33,18 @@
 
 @keyframes fadeInUp {
     from {
-        transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
     }
 
     to {
-        transform: translate(0, -100%);
+        transform: translate3d(0, -100%, 0);
+        // убирает занимаемое место
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
     }
+
 }
 
 
