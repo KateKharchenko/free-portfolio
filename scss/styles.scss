@@ -1,24 +1,25 @@
-@import 'normalize';
-@import 'variables';
-@import 'mixins';
-@import 'socials';
-@import 'slider';
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "socials";
+@import "slider";
+@import "modal";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100%;
-    font-size: 10px;
+  height: 100%;
+  font-size: 10px;
 }
 
 body {
-    min-height: 100%;
-    @include font(1.4rem, $text-color, 500, $text-ff, 1.8);
+  min-height: 100%;
+  @include font(1.4rem, $text-color, 500, $text-ff, 1.8);
 }
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
