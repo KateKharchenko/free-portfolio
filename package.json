@@ -1,5 +1,5 @@
 {
-  "name": "default",
+  "name": "team-work",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,6 +19,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kate Kharchenko",
+  "author": "Kate Kharchenko, Ievgen Minko, Inna Bereshuck, Vladislav Shevchenko, Katerine Zhdanova, Alexander, Olga Zhdanova, Artem Verovskiy, Aleksii Stepanov, Albert",
   "license": "ISC"
 }
