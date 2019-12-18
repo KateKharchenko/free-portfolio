@@ -1,9 +1,11 @@
+@import "modal";
 @import "normalize";
 @import "variables";
 @import "mixins";
 @import "socials";
 @import "slider";
-@import "modal";
+@import "cookie";
+@import "animate";
 
 * {
   box-sizing: border-box;
