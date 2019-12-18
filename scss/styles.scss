@@ -3,6 +3,7 @@
 @import 'mixins';
 @import 'socials';
 @import 'slider';
+@import 'footer';
 
 * {
     box-sizing: border-box;
@@ -16,9 +17,4 @@ html {
 body {
     min-height: 100%;
     @include font(1.4rem, $text-color, 500, $text-ff, 1.8);
-}
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
 }
