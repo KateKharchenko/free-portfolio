@@ -1,0 +1,28 @@
+@mixin font($fz, $c, $fw: inherit, $ff: inherit, $lh: inherit, $fs: inherit) {
+    font-family: $ff;
+    font-weight: $fw;
+    line-height: $lh;
+    font-style: $fs;
+    font-size: $fz;
+    color: $c;
+}
+
+@mixin tr {
+    transition: all .4s ease-in;
+}
+
+@mixin hover {
+    @include tr();
+    &:hover,
+    &:focus,
+    &:active {
+        @content;
+    }
+}
+
+@mixin pCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,24 @@
+.socials {
+    padding: 0;
+}
+
+.social {
+    display: inline-block;
+    margin: 0 2px;
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: $brand-color;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border: 2px solid $brand-color;
+        border-radius: 50%;
+        opacity: .6;
+        text-align: center;
+        @include hover {
+            color: #fff;
+            background-color: $brand-color;
+        }
+    }
+}

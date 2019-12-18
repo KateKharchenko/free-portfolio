@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+$brand-color: #3677fd;
+$text-color: #5a5a5a;
+$text-color-alt: #fff;
+
+$b-size: 1px;
+
+$h1-size : 50px;
+$h2-size : $h1-size;
+$h3-size : 24px;
+$text-size : 16px;
+
+$text-ff: 'Lato', sans-serif;
+
+$gradient: linear-gradient(45deg, #3695ff 0, #3695ff 10%, #469dff 10%,#469dff 30%, #409aff 30%, #409aff 60%, #3c98ff 60%, #3c98ff 80%, #3674fd 80%, #3674fd 100%);

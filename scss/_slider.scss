@@ -1,0 +1,54 @@
+.slider {
+    position: relative;
+    &__slide {}
+    &__arrow {
+        outline: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        padding: 20px;
+        font-size: 2em;
+        color: $brand-color;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        &--left {
+            left: 0;
+        }
+        &--right {
+            right: 0;
+        }
+        @include hover {
+            font-size: 2.5em;
+        }
+    }
+    &__dots {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    &__dot {
+        display: inline-block;
+        font-size: 0;
+        vertical-align: middle;
+    }
+    &__dot-btn {
+        width: 13px;
+        height: 13px;
+        line-height: 13px;
+        border: $b-size solid #fff;
+        background-color: $brand-color;
+        padding: 0;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        @include hover {
+            border-color: $brand-color;
+            background-color: #fff;
+        }
+        .slider__dot--active & {
+            border-color: $brand-color;
+            background-color: #fff;
+        }
+    }
+} 
