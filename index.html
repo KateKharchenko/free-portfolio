@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Free Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    
+<body class="with-modal">    
+    <div class="modal hire-me">
+        <div class="modal__content">
+            <a href="#" class="modal__close" data-close></a>
+            <div class="modal__head">
+                <h2>Hire Me</h2>
+            </div>
+            <div class="modal__body">
+                <form class="form" action="" method="POST" name="feedback">
+                    <input class="form__input" type="text" name="name" placeholder="Your Name">
+                    <input class="form__input" type="email" name="email" placeholder="Your Email">
+                    <textarea class="form__input" name="message" rows="10" placeholder="Your Message"></textarea>
+                </form>
+            </div>
+            <div class="modal__foot">
+                <button type="submit" data-close class="modal__btn">SEND MESSAGE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal menu">
+        <div class="modal__content">
+            <a href="#" class="modal__close" data-close></a>
+            <div class="modal__body">
+            </div>
+            <div class="modal__foot">
+            </div>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/0dd4081373.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

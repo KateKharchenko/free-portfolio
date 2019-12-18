@@ -1,0 +1,18 @@
+.form {
+    $form-color: #b7c0c9;
+    &__input {
+        border: $b-size solid $form-color;
+        color: $form-color;
+        padding: 15px 20px;
+        border-radius: 10px;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        resize: none;
+        outline: none;
+        @include tr();
+        &:focus {
+            border-color: $brand-color;
+        }
+    }
+}

@@ -4,6 +4,9 @@
 @import 'socials';
 @import 'slider';
 
+@import 'modal';
+@import 'form';
+
 * {
     box-sizing: border-box;
 }
@@ -21,4 +24,13 @@ body {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+h2 {
+    font-size: $h2-size;
+    font-weight: 300;
+    line-height: 1;
+    color: $brand-color;
+    text-transform: capitalize;
+    margin: 0;
 }

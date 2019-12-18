@@ -1,0 +1,63 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: -1;
+    opacity: 0;
+    @include tr();
+    .with-modal &.open {
+        background-color: rgba(0,0,0, 0.7);
+        z-index: 10;
+        opacity: 1;
+    }
+    &__content {
+        max-width: 815px;
+        width: 90%;
+        min-height: 620px;
+        background-color: $text-color-alt;
+        border-radius: 10px;
+        margin: auto;
+        text-align: center;
+        padding: 60px 150px;
+        position: relative;
+    }
+    &__head {}
+    &__body {
+        margin: 40px 0;
+    }
+    &__foot {}
+    &__btn {
+        text-transform: uppercase;
+        color: $text-color-alt;
+        background: $brand-color;
+        border: $b-size solid $brand-color;
+        padding: 18px 45px;
+        font-weight: bold;
+        border-radius: 30px;
+        cursor: pointer;
+        outline: none;
+        @include hover {
+            background-color: rgba(0,0,0,0);
+            color: $brand-color;
+        }
+    }
+    &__close {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/close.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+.with-modal {
+    overflow-y: hidden;
+}
