@@ -1,25 +1,41 @@
-@import 'normalize';
-@import 'variables';
-@import 'mixins';
-@import 'socials';
-@import 'slider';
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "socials";
+@import "slider";
+@import "cookie";
+@import "animate";
+
+@import 'expert';
+@import 'modal';
+@import 'form';
 @import 'menu-popup';
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100%;
-    font-size: 10px;
+  height: 100%;
+  font-size: 10px;
 }
 
 body {
-    min-height: 100%;
-    @include font(1.4rem, $text-color, 500, $text-ff, 1.8);
+  min-height: 100%;
+  @include font(1.4rem, $text-color, 500, $text-ff, 1.8);
 }
 
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+h2 {
+    font-size: $h2-size;
+    font-weight: 300;
+    line-height: 1;
+    color: $brand-color;
+    text-transform: capitalize;
+    margin: 0;
+    text-align: center;
 }

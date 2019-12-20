@@ -1,0 +1,39 @@
+.cookie {
+    background-color: #194277;
+    max-height: 72px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    &>.container {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        margin: 0;
+        @include font($text-size, $text-color-alt, 400, $text-ff, 2);
+        margin-right: 60px;
+    }
+
+    &__btn {
+        @include font(12px, #194277, 700, $text-ff, 1.2);
+        padding: 10px 40px;
+        border: 1px solid $text-color-alt;
+        border-radius: 20px;
+        outline: none;
+
+        @include hover {
+            background-color: #194277;
+            color: $text-color-alt;
+            cursor: pointer;
+        }
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
