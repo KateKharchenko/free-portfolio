@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'socials';
+@import 'slider';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
+  }
+
+body {
+    min-height: 100%;
+    margin: 0;
+    @include font(1.4rem, $text-color, 500, $text-ff, 1.8);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.text {
+    text-align: center;
+    padding: 95px 25px 115px;
+    &__title {
+        @include font ($h1-size, $text-color, 300, $text-ff,1.5 );
+        color: $brand-color;
+        margin: 0;
+       
+    }
+    &__subtitle {
+        @include font ($text-size, $text-color, 400, $text-ff,1.5 );
+        margin: 0;
+        margin-top: 75px;
+    }
+}
+
+
+
+
+
