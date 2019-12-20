@@ -1,0 +1,46 @@
+.footer {
+    &__section {
+        min-height: 250px;
+        background-image: $gradient;
+        text-align: center;    
+    }
+    &__container {
+        margin: 100px auto;
+        display: inline-block;
+        justify-content: center;
+    }
+    &__text {
+        font-family: $text-ff ;
+        font-weight: lighter;
+        font-size: 50px;
+        color: #fff;
+        &--bold {
+            font-weight: bold;
+        }
+    }
+    &__btn {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: $text-ff;
+        font-weight: bold;
+        padding: 18px;
+        background-color: #fff;
+        color:$brand-color;
+        border-radius: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+        width: 200px;
+        height: 60px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        transition: all .25s ease-in;
+        &:hover,
+        &:active,
+        &:focus {
+            color: #fff;
+            background-color: $brand-color;
+            transform: scale(1.3);
+}
+}
+}
