@@ -1,6 +1,6 @@
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+    // max-width: 1140px;
+    // margin: 0 auto;
     background-color: #f1f8ff;
 }
 
@@ -18,11 +18,10 @@ h2 {
 
 .clients {
     display: flex;
-    max-width: 800px;
-    // padding: 200px 20px 10px 20px;
+    width: 100%;
     justify-content: space-around;
     text-align: center;
-    margin: 0 auto;
+    align-items: center;
     &__logo {
         width: 25%;
     filter: grayscale(100%);
@@ -31,6 +30,6 @@ h2 {
     &__img {
         width: 70%;
         padding: 20px;
-        // opacity: .5;
+        opacity: .5;
     }
 }
