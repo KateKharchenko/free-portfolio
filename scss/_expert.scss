@@ -1,0 +1,44 @@
+.bg {
+  margin: 0;
+  background-color: #f1f8ff;
+}
+
+.expert {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__item {
+    max-width: 340px;
+    text-align: center;
+    margin: 40px 0;
+  }
+  &__text {
+    font-size: $text-size;
+    line-height: 1.8;
+    overflow: hidden;
+  }
+  &__icont {
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    border: 1px solid rgba(90, 90, 90, 0.3);
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__title {
+    color: $brand-color;
+    font-size: $h3-size;
+  }
+  &__icont:hover {
+    box-shadow: 0 0 20px 0 rgba(90, 90, 90, 0.3);
+    border: none;
+    cursor: pointer;
+  }
+}

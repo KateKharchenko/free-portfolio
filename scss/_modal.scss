@@ -1,80 +1,61 @@
-@import "normalize";
-@import "variables";
-@import "mixins";
-@import "socials";
-@import "slider";
-
-* {
-  box-sizing: border-box;
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: -1;
+    opacity: 0;
+    @include tr;
+    .with-modal &.open {
+        background-color: rgba(0,0,0, 0.7);
+        z-index: 10;
+        opacity: 1;
+    }
+    &__content {
+        max-width: 815px;
+        width: 90%;
+        min-height: 620px;
+        background-color: $text-color-alt;
+        border-radius: 10px;
+        margin: auto;
+        text-align: center;
+        padding: 60px 150px;
+        position: relative;
+    }
+    &__body {
+        margin: 40px 0;
+    }
+    &__btn {
+        text-transform: uppercase;
+        color: $text-color-alt;
+        background: $brand-color;
+        border: $b-size solid $brand-color;
+        padding: 18px 45px;
+        font-weight: bold;
+        border-radius: 30px;
+        cursor: pointer;
+        outline: none;
+        @include hover {
+            background-color: rgba(0,0,0,0);
+            color: $brand-color;
+        }
+    }
+    &__close {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/close.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 }
 
-html {
-  height: 100%;
-  font-size: 10px;
-}
-
-body {
-  min-height: 100%;
-  @include font(1.4rem, $text-color, 500, $text-ff, 1.8);
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  margin: 60px 0;
-}
-
-.bg {
-  margin: 0;
-  background-color: #f1f8ff;
-}
-
-h2 {
-  font-size: $h2-size;
-  font-weight: 300;
-  font-weight: 1;
-  color: $brand-color;
-  text-align: center;
-  padding: 60px;
-  margin: 0;
-}
-
-.expert {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  &__item {
-    max-width: 340px;
-    text-align: center;
-    margin: 40px 0;
-  }
-  &__text {
-    font-size: $text-size;
-    line-height: 1.8;
-    overflow: hidden;
-  }
-  &__icont {
-    margin: 0 auto;
-    width: 140px;
-    height: 140px;
-    border: 1px solid rgba(90, 90, 90, 0.3);
-    border-radius: 50%;
-    position: relative;
-    margin-bottom: 40px;
-  }
-  &__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  &__title {
-    color: $brand-color;
-    font-size: $h3-size;
-  }
-  &__icont:hover {
-    box-shadow: 0 0 20px 0 rgba(90, 90, 90, 0.3);
-    border: none;
-    cursor: pointer;
-  }
+.with-modal {
+    overflow-y: hidden;
 }
