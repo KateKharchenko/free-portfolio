@@ -1,0 +1,29 @@
+h2 {
+    font-size: $h2-size;
+    font-weight: 300;
+    line-height: 1;
+    color: $brand-color;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 20px;
+    // margin: 100px;
+}
+
+
+.clients {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    &__logo {
+        width: 25%;
+    filter: grayscale(100%);
+    
+    }
+    &__img {
+        width: 70%;
+        padding: 20px;
+        opacity: .5;
+    }
+}
