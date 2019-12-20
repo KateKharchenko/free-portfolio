@@ -1,0 +1,131 @@
+.hero {
+
+    background-image: $gradient;
+
+    &__lines {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-end;
+        align-items: flex-end;
+        margin: 0 auto 45px;
+        padding-top: 25px;
+        // padding-bottom: 45px;
+        .hero__line {
+            @include tr;
+            width: 25px;
+            border: 1px solid $text-color-alt;
+
+            & {
+                margin-top: 7px;
+            }
+
+        }
+        &:hover,
+            &:active,
+            &:focus { 
+                .hero__line {
+                    border-color: #194277;
+                }
+            }
+    }
+
+    &__dots {
+        display: flex;
+        .hero__dot {
+            margin: auto;
+            width: 150px;
+            height: 150px;
+            border: 1px solid $text-color-alt;
+            background-color: $text-color-alt;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 0 $text-color-alt;
+        }
+    }
+    
+
+    &__title {
+        @include font(5rem, $text-color, 900, $text-ff, 1.2);
+        color: $text-color-alt;
+        text-transform: uppercase;
+        text-align: center;
+        width: 815px;
+        margin: 45px auto 30px;
+        height: 120px;
+        overflow: hidden;
+    }
+
+    &__text {
+        margin: 0 auto;
+        text-transform: uppercase;
+        @include font(1.6rem, $text-color, 300, $text-ff, 2.2);
+        width: 770px;
+        color: $text-color-alt;
+        height: 80px;
+        overflow: hidden;
+        text-align: center;
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        margin: 70px auto 80px auto;
+        a {
+            @include tr;
+            text-decoration: none;
+            @include font(1.6rem, $brand-color, 700, $text-ff, 1.6);
+            margin: auto;
+            background-color: $text-color-alt;
+            border: 1px solid $text-color-alt;
+            border-radius: 40px;
+            padding: 15px 75px;
+            text-transform: uppercase;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $brand-color;
+                color: $text-color-alt;
+            }
+        }
+        
+    }
+
+    &__scroll {
+        display: block;
+        text-align: center;
+        padding: 0 auto 20px auto;
+        svg {
+            width: 20px;
+            height: 30px;
+            fill: $text-color-alt;
+            @include tr;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            svg {
+                fill: #194277;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .hero {
+        &__title {
+            width: 98%;
+            margin: 45px auto 30px;
+        } 
+
+        &__text {
+            width: 98%;
+            margin: 0 auto;
+        }
+    }
+}
