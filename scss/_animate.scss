@@ -17,12 +17,20 @@
         opacity: 0;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -100%;
     }
 
     to {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
     }
 }
 
@@ -33,12 +41,22 @@
 
 @keyframes fadeInUp {
     from {
-        transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
     }
 
     to {
-        transform: translate(0, -100%);
+        transform: translate3d(0, -100%, 0);
+        // убирает занимаемое место
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
     }
+
 }
 
 
@@ -58,6 +76,11 @@
 .animated.delay-1s {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
+}
+
+.animated.slow {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 @media (print),
