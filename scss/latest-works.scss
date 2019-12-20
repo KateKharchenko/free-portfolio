@@ -1,0 +1,43 @@
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+
+
+.latest-works__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section__header {
+    @include font(50px, $brand-color, $fw: 300, $ff: inherit, $lh: inherit, $fs: inherit);
+    margin: 90px 0 90px;
+}
+
+.latest-works__section {
+    margin: 0 14px 50px;
+    display: inline-block;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    width: 360px;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    @include tr;
+    &:hover,
+    &:focus,
+    &:active {
+        transform: scale(1.1);
+    }
+}
+
+.latest-works__link {
+    text-decoration: none;
+}
+
+.latest-works__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
