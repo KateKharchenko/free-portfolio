@@ -1,7 +1,8 @@
 .hero {
-
+    text-align: center;
     background-image: $gradient;
-
+    padding: 0 0 80px;
+    min-height: 100vh;
     &__lines {
         cursor: pointer;
         display: flex;
@@ -56,7 +57,7 @@
     }
 
     &__text {
-        margin: 0 auto;
+        margin: 0 auto 30px;
         text-transform: uppercase;
         @include font(1.6rem, $text-color, 300, $text-ff, 2.2);
         width: 770px;
@@ -71,32 +72,34 @@
     }
 
     &__btn {
-        display: flex;
-        margin: 70px auto 80px auto;
-        a {
+        // display: flex;
+        // margin: 70px auto 80px auto;
+        // a {
             @include tr;
             text-decoration: none;
             @include font(1.6rem, $brand-color, 700, $text-ff, 1.6);
-            margin: auto;
+            margin: 0 20px;
             background-color: $text-color-alt;
             border: 1px solid $text-color-alt;
             border-radius: 40px;
             padding: 15px 75px;
             text-transform: uppercase;
-
+            display: inline-block;
             &:hover,
             &:focus,
             &:active {
                 background-color: $brand-color;
                 color: $text-color-alt;
             }
-        }
+        // }
         
     }
 
     &__scroll {
-        display: block;
-        text-align: center;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translate(-50%, 0);
         padding: 0 auto 20px auto;
         svg {
             width: 20px;

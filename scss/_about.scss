@@ -28,7 +28,7 @@ body {
 
 .text {
     text-align: center;
-    padding: 95px 25px 115px;
+    padding: 100px 0;
     &__title {
         @include font ($h1-size, $text-color, 300, $text-ff,1.5 );
         color: $brand-color;

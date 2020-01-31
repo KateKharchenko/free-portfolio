@@ -7,15 +7,11 @@
     max-width: 1170px;
     margin: 0 auto;
     text-align: center;
-}
-
-.section__header {
-    @include font(50px, $brand-color, $fw: 300, $ff: inherit, $lh: inherit, $fs: inherit);
-    margin: 90px 0 90px;
+    padding: 100px 0;
 }
 
 .latest-works__section {
-    margin: 0 14px 50px;
+    margin: 25px 14px;
     display: inline-block;
     background-color: #f4f4f4;
     border-radius: 15px;
@@ -30,8 +26,12 @@
         transform: scale(1.1);
     }
 }
+.latest-works__links {
+    margin: 50px 0;
+}
 
 .latest-works__link {
+    display: inline-block;
     text-decoration: none;
 }
 
